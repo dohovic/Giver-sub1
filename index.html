@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="icon" href="favicon.ico?v=2"/>
-		<title>Giver - sub1 </title>
-	</head>
-    <body>
-        <header class ="block" id="layout1-header">
-            
-        </header>
-        <main>
-            
-        </main>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="includes/style.css" />
+    <link rel="icon" href="favicon.ico?v=2" />
+    <title>Giver - sub1</title>
+  </head>
+  <body class="p-4">
+    <header class="block grid grid-cols-3" id="layout1-header">
+      <div>
+        <img src="images/Giver Logo.png" alt="" />
+      </div>
+      <nav class="self-center justify-self-center">
+        <ul class="flex col-4 gap-6">
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/leaves.png" alt="" />
+              <div>My garden</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/add-leave.png" alt="" />
+              <div>New garden</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/event-Icon.png" alt="" />
+              <div>My events</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/new-event-icon.png" alt="" />
+              <div>New event</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="grid grid-cols-2">
+        <button><img src="images/bell.png" alt="" /></button>
+        <button><img src="images/user profile.png" alt="" /></button>
+      </div>
+    </header>
+    <main></main>
+  </body>
 </html>

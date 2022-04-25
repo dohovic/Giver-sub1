@@ -1,0 +1,7 @@
+#layout1-header {
+  grid-template-columns: auto 1fr auto;
+}
+
+li a {
+  grid-template-columns: auto 1fr;
+}
