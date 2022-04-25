@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header, main, footer, nav, aside, section, article  {
+    display: block;
+}
+
+header, nav, footer {
+    width: 100%;
+}
+
+#nav-container {
+    display: flex;
+    background: #D8D8D8;
+}
