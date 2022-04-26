@@ -50,6 +50,7 @@ li a {
 }
 
 .main-wrapper {
+  margin-top: 10px;
   margin: 0px auto;
   max-width: 1374px;
 }
@@ -98,10 +99,9 @@ input::placeholder {
 }
 
 .gardens-container {
-  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
-  gap:50px;
+  margin-top: 10px;
 }
 
 .gardens-container:last-child {
