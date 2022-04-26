@@ -43,6 +43,9 @@ li a {
   border-radius: 15px;
   grid-template-columns: auto 1fr;
 }
+li a:hover {
+  background: #dad6d6;
+}
 
 #nav-container {
   display: flex;
@@ -207,6 +210,7 @@ input::placeholder {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .time-inputs {
