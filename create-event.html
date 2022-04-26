@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="includes/style.css" />
+    <link rel="icon" href="favicon.ico?v=2" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <script src="includes/script.js"></script>
+    <title>Giver - sub1</title>
+  </head>
+  <body class="p-4">
+    <header class="flex justify-between" id="layout1-header">
+      <div>
+        <a href="index.html" id="logo"></a>
+      </div>
+      <nav class="self-center justify-self-center">
+        <ul class="flex col-4 gap-6">
+          <li>
+            <a href="#" class="grid gap-1">
+              <img src="images/leaves.png" alt="" />
+              <div>My Gardens</div>
+            </a>
+          </li>
+          <li>
+            <a href="./create-garden.html" class="grid gap-1"
+              ><img src="images/add-leave.png" alt="" />
+              <div>New Garden</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/event-Icon.png" alt="" />
+              <div>My Events</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/new-event-icon.png" alt="" />
+              <div>New Event</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="grid grid-cols-2">
+        <button><img src="images/bell.png" alt="" /></button>
+        <button><img src="images/user profile.png" alt="" /></button>
+      </div>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <form action="#" method="GET">
+          <section class="input-container">
+            <div class="input-fields-wrapper">
+              <div class="input-field" id="line-input">
+                <input type="text" placeholder="Add Garden Name" />
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Add Address" />
+              </div>
+              <div class="time-inputs">
+                <div class="time-input">
+                  <div>Date</div>
+                  <input type="date" name="date" class="date" />
+                </div>
+                <div class="time-input">
+                  <div>Time</div>
+                  <input
+                    type="time"
+                    step="1"
+                    name="time"
+                    class="date"
+                    value="00:00:00"
+                  />
+                </div>
+              </div>
+              <div class="input-field" id="text-input">
+                <textarea
+                  type="text"
+                  placeholder="Add Event Description"
+                ></textarea>
+              </div>
+            </div>
+            <a href="#">
+              <div class="garden-image-input">
+                <div class="upload-garden-photo">
+                  <img
+                    src="./includes/images/add-image-garden-icon.png"
+                    alt=""
+                  />
+                </div>
+                <span>Garden Photo</span>
+              </div>
+            </a>
+          </section>
+          <div class="second-comtainer">
+              <section id="tasks">
+                  <div>
+                      <button type="button" onclick="addTask()" class="flex gap-2 place-items-center">
+                        <img src="images/Plus icon.png" alt="add-task" />
+                        <p>Add Task</p>
+                      </button>
+                  </div>
+                </section>
+              <button class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script></script>
+  </body>
+</html>
