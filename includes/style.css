@@ -443,3 +443,28 @@ li a {
 .garden-detail {
   font-weight: 400;
 }
+
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  width: 848px;
+  height: 200px;
+
+  background: #F3F0F0;
+}
+
+#comment-profile {
+  width: 64px;
+  height: 64px;
+  margin-left: 40px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.comment > p {
+  margin-left: 14px;
+}
