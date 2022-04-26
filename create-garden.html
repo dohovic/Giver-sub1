@@ -53,24 +53,128 @@
     </header>
     <main>
         <div class="main-wrapper">
-            <div class="search-bar">
-                <div id="search-icon"></div>
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="input-field" id="line-input">
-                <input type="text" placeholder="Add Garden's Name">
-            </div>
-            <div class="input">
-                <div class="input-container">
+            
+            <section class="input-container">
+                <div class="input-fields-wrapper">
+                    <div class="input-field" id="line-input">
+                        <input type="text" placeholder="Add Garden Name">
+                    </div>
                     <div class="input-field">
                         <input type="text" placeholder="Add Address">
                     </div>
                     <div class="input-field" id="text-input">
-                    <!-- <div class="input-field"> -->
                         <textarea type="text" placeholder="Describe your garden to the community"></textarea>
                     </div>
                 </div>
-            </div>
+                <a href="#">
+                    <div class="garden-image-input">
+                        <div class="upload-garden-photo"><img src="./includes/images/add-image-garden-icon.png" alt=""></div>
+                        <span>Garden Photo</span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="category-wrapper">
+                <span>Grow For The Win</span>
+                <div class="gardens-container">
+                    
+                    <section class="garden-item" id="create-item">
+                        <div class="garden-image-edit">
+                            <div class="upload-garden-photo"><img src="./includes/images/items/lemon.png" alt=""></div>
+                            <a href="#"><img src="./includes/images/add-image-invert.png" alt=""></a>
+                        </div>
+                        <span>Lemon Trees</span>
+                        <div class="plant-amount-editor">
+                            <button class="editor-button">
+                                -
+                            </button>
+                            <div class="plant-amount">
+                                <span>4</span>
+                            </div>
+                            <button class="editor-button">
+                                +
+                            </button>
+                        </div>
+                    </section>
+                    
+                    <section class="garden-item" id="create-item">
+                        <div class="garden-image-edit">
+                            <div class="upload-garden-photo"><img src="./includes/images/items/basil.png" alt=""></div>
+                            <a href="#"><img src="./includes/images/add-image-invert.png" alt=""></a>
+                        </div>
+                        <span>Basil</span>
+                        <div class="plant-amount-editor">
+                            <button class="editor-button">
+                                -
+                            </button>
+                            <div class="plant-amount">
+                                <span>60</span>
+                            </div>
+                            <button class="editor-button">
+                                +
+                            </button>
+                        </div>
+                    </section>
+                    
+                    <section class="garden-item" id="create-item">
+                        <a href="#">
+                            <div class="garden-image-input">
+                                <div class="upload-garden-photo"><img src="./includes/images/add-image-garden-icon.png" alt=""></div>
+                                <span>Garden Photo</span>
+                            </div>
+                        </a>
+                        <span>Add Plant Name</span>
+                        <div class="plant-amount-editor">
+                            <button class="editor-button">
+                                -
+                            </button>
+                            <div class="plant-amount">
+                                <!-- <span>amount</span> -->
+                                <input type="text" inputmode="numeric" placeholder="0">
+                            </div>
+                            <button class="editor-button">
+                                +
+                            </button>
+                        </div>
+                    </section>
+
+                
+                </div>
+                <div class="gardens-container">
+                    <section class="garden-item" id="create-item">
+                        <a href="#">
+                            <div class="garden-image-input">
+                                <div class="upload-garden-photo"><img src="./includes/images/add-image-garden-icon.png" alt=""></div>
+                                <span>Garden Photo</span>
+                            </div>
+                        </a>
+                        <span>Add Plant Name</span>
+                        <div class="plant-amount-editor">
+                            <button class="editor-button">
+                                -
+                            </button>
+                            <div class="plant-amount">
+                                <!-- <span>amount</span> -->
+                                <input type="text" inputmode="numeric" placeholder="0">
+                            </div>
+                            <button class="editor-button">
+                                +
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="garden-item" id="add-plant-item">
+                        <a href="#">
+                            <div class="garden-image-input">
+                                <div class="upload-garden-photo"><img src="./includes/images/plus-circle.png" alt=""></div>
+                                <span>Add New Plant</span>
+                            </div>
+                        </a>
+                    </section>
+                </div> 
+                <button class="submit-button">Submit</button>
+            </section>
+            
         </div>        
     </main>
   </body>
