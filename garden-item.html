@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="includes/style.css" />
+    <link rel="icon" href="favicon.ico?v=2" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Quicksand">
+    <title>Giver - sub1</title>
+  </head>
+  <body class="p-4">
+    <header class="flex justify-between" id="layout1-header">
+      <div>
+        <a href="index.html" id="logo"></a>
+      </div>
+      <nav class="self-center justify-self-center">
+        <ul class="flex col-4 gap-6">
+          <li>
+                <a href="#" class="grid gap-1">
+                    <img src="images/leaves.png" alt="" />
+                    <div>My Gardens</div>
+                </a>
+          </li>
+          <li>
+            <a href="./create-garden.html" class="grid gap-1"
+              ><img src="images/add-leave.png" alt="" />
+              <div>New Garden</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/event-Icon.png" alt="" />
+              <div>My Events</div></a
+            >
+          </li>
+          <li>
+            <a href="#" class="grid gap-1"
+              ><img src="images/new-event-icon.png" alt="" />
+              <div>New Event</div></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="grid grid-cols-2">
+        <button><img src="images/bell.png" alt="" /></button>
+        <button><img src="images/user profile.png" alt="" /></button>
+      </div>
+    </header>
+    <main>
+        <div class="main-wrapper">
+            <div class="search-bar">
+                <div id="search-icon"></div>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <section class="input-container">
+                <div class="input-fields-wrapper">
+                    <div class="input-field">
+                        <span class="garden-detail" id="garden-name">Lemons garden</span>
+                    </div>
+                    <div class="input-field">
+                        <span class="garden-detail" id="garden-address">Jabotinsky 16 st. Ramat-Gan, IL.</span>
+                    </div>
+                    <div class="input-field" id="text-input">
+                        <span class="garden-detail" id="garden-description">Just behind the old barber shop and right under your nose. 
+                            Go around the store and join us in turning the old basketball court into a lush, fun and citrusi communal garden space.
+                            Growing all kinds of fresh produce for your plate and stomach.
+                        </span>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="garden-image-input">
+                        <div class="garden-image"><img src="./includes/images/gardens/lemon_garden.png" alt=""></div>
+                    </div>
+                </a>
+            </section>
+            <section class="category-wrapper">
+                <span>Our Giving Plants</span>
+                <div class="gardens-container">
+                    <section class="garden-item" id="plant-item">
+                        <div class="garden-image" id="item-display"><img src="./includes/images/items/lemon-no-bottom-rounds.png" alt=""></div>
+                        <div class="amount-display">
+                            <span>4&nbsp</span>
+                            <span>Lemon Trees</span>
+                        </div>
+                    </section>
+                    <section class="garden-item" id="plant-item">
+                        <div class="garden-image" id="item-display"><img src="./includes/images/items/lemon-no-bottom-rounds.png" alt=""></div>
+                        <div class="amount-display">
+                            <span>60&nbsp</span>
+                            <span>Basil</span>
+                        </div>
+                    </section>
+                    <section class="garden-item" id="plant-item">
+                        <div class="garden-image" id="item-display"><img src="./includes/images/items/lemon-no-bottom-rounds.png" alt=""></div>
+                        <div class="amount-display">
+                            <span>48&nbsp</span>
+                            <span>Cherry Tomatoes</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+  </body>
+</html>

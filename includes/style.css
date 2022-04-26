@@ -207,6 +207,7 @@ li a {
   height: 48px;
   margin: 0 auto;
   margin-top: 16px;
+  margin-bottom: 16px;
   padding: 12px;
   align-items: center;
   
@@ -350,6 +351,42 @@ li a {
   font-size: 14px;
 }
 
+#plant-item {
+  display: flex;
+  flex-direction: column;
+  width: 424px;
+  height: 390px;
+  /* margin-right: 32px; */
+  /* margin-bottom: 32px; */
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#item-display {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.amount-display {
+  display: flex;
+  width: 424px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #F3F0F0;
+}
+
+.amount-display > span {
+  font-weight: 400;
+}
+
 .plant-amount-editor {
   display: flex;
   justify-content: center;
@@ -401,4 +438,8 @@ li a {
 
   border-radius: 15px;
   background: #F3F0F0;
+}
+
+.garden-detail {
+  font-weight: 400;
 }
