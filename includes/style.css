@@ -583,7 +583,14 @@ input::placeholder {
 
 @media only screen and (max-width: 1024px) {
   nav{
-    display: hidden;
+    position: fixed;
+    display: none;
+    background: #000000;
+    top: 60px;
+  }
+
+  nav .active{
+    display: block;
   }
 }
 @media only screen and (max-width: 1152px) {
@@ -610,4 +617,5 @@ input::placeholder {
   .gardens-container{
     justify-content: space-around;
   }
+
 }
