@@ -106,6 +106,12 @@ input::placeholder {
 }
 
 
+.category-wrapper {
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+
 .gardens-container {
   display: flex;
   flex-wrap: wrap;
@@ -124,10 +130,25 @@ input::placeholder {
 .garden-item {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  max-height: 264px;
-  min-width: 300px;
-  min-height: 176px;
+  /* flex-basis: min-content; */
+  max-width: 320px;
+  /* max-height: 264px; */
+  min-width: 160px;
+  /* min-height: 176px; */
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.plant-item {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: min-content; */
+  max-width: 320px;
+  /* max-height: 264px; */
+  min-width: 160px;
+  /* min-height: 176px; */
   justify-content: space-between;
   font-style: normal;
   font-weight: 600;
@@ -594,6 +615,29 @@ input::placeholder {
   .input-container{
     justify-content: space-around;
   }
+
+  .social-profile > span{
+    font-size: 12px;
+  }
+
+  #comment-profile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .gardens-container > a {
+    display: flex;
+    flex-basis: min-content;
+  }
+
+  .garden-item {
+    flex-shrink: 2;
+  }
+
+
+  .plant-item {
+    flex-shrink: 2;
+  }
 }
 @media only screen and (max-width: 768px) {
   .second-comtainer {
@@ -607,7 +651,31 @@ input::placeholder {
   .story-container{
     gap:5px;
   }
-  .gardens-container{
-    justify-content: space-around;
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
   }
+
+  .gardens-container {
+    /* justify-content: space-around; */
+  }
+
+  .category-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-wrapper > h1 h2 {
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-size: medium;
+  }
+
+
+  /* .category-wrapper > h2 {
+    align-self: flex-start;
+    font-size: medium;
+  } */
 }
