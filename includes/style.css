@@ -99,6 +99,7 @@ input::placeholder {
 .category-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .gardens-container {
@@ -124,6 +125,10 @@ input::placeholder {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+}
+
+.garden-address {
+  font-weight: 400;
 }
 
 .item {
@@ -522,12 +527,14 @@ input::placeholder {
   align-items: center;
 }
 
-.story-container {
+.story-profile-container {
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding: 6px;
+  z-index: 3;
   font-size: 12px;
 }
 
@@ -549,15 +556,26 @@ input::placeholder {
 
 .story-desktop {
   display: flex;
-  width: 104px;
+  /* width: 104px; */
   height: 200px;
-  padding: 6px;
+  /* padding: 6px; */
   align-items: end;
   justify-content: center;
-  background: url("./images/stories/lihi-story.png");
-  background-size: 100% auto;
+  /* background: url("./images/stories/lihi-story.png"); */
+  /* background-size: 100% auto; */
   /* background: #F3F0F0; */
   border-radius: 5px;
   margin-right: 16px;
   margin-bottom: 8px;
+}
+
+.story-pic-container {
+  width: 104px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+.story-pic {
+  width: 100%;
 }
