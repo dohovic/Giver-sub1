@@ -457,6 +457,9 @@ input::placeholder {
   background: #f3f0f0;
 }
 
+#garden-name{
+  font-weight: 700;
+}
 .garden-detail {
   font-weight: 400;
 }
@@ -578,10 +581,7 @@ input::placeholder {
   z-index: 2;
 }
 
-
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   nav{
     display: hidden;
   }
