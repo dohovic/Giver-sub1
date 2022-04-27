@@ -573,7 +573,7 @@ input::placeholder {
     position: fixed;
     display: none;
     background: #000000;
-    top: 60px;
+    top: 70px;
   }
 
   nav .active {
@@ -623,4 +623,5 @@ input::placeholder {
   .gardens-container {
     justify-content: space-around;
   }
+
 }
