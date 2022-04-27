@@ -323,6 +323,7 @@ input::placeholder {
   padding-top: 20px;
   padding-left: 50px;
 }
+
 .garden-image-input {
   display: flex;
   flex-direction: column;
@@ -331,6 +332,7 @@ input::placeholder {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  font-weight: 400;
   background: #f3f0f0;
 }
 
@@ -355,9 +357,10 @@ input::placeholder {
 
 .garden-image-input .upload-garden-photo {
   width: 106px;
-  height: 104px;
+  /* height: 104px; */
   align-self: center;
   justify-self: center;
+  margin: 4px;
 }
 
 #create-item {
@@ -370,7 +373,7 @@ input::placeholder {
   align-items: center;
 
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
