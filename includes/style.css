@@ -99,6 +99,7 @@ input::placeholder {
 .category-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .gardens-container {
@@ -124,6 +125,10 @@ input::placeholder {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
+}
+
+.garden-address {
+  font-weight: 400;
 }
 
 .item {
