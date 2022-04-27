@@ -33,6 +33,10 @@ body {
     width: 100%;
 } */
 
+.nav-icon {
+  height: 22px;
+}
+
 #layout1-header {
   grid-template-columns: auto 1fr auto;
 }
@@ -60,9 +64,10 @@ li a:hover {
 
 .search-bar {
   display: flex;
-  width: 704px;
+  width: 712px;
   height: 48px;
   margin: 0 auto;
+  margin-top: 16px;
   padding: 12px;
   align-items: center;
 
@@ -209,7 +214,7 @@ input::placeholder {
   height: 48px;
   margin-top: 16px;
   margin-bottom: 16px;
-  padding-left: 12px;
+  padding: 12px;
   background: #f3f0f0;
   border-radius: 15px;
   font-style: normal;
@@ -239,7 +244,7 @@ input::placeholder {
 
 .date {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;

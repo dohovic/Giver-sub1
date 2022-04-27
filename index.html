@@ -16,50 +16,56 @@
         <title>Giver - Home Page</title>
     </head>
     <body class="p-4">
-        <header class="flex justify-between" id="layout1-header">
+        <header class="grid justify-items-center" id="layout1-header">
             <div>
                 <a href="index.html" id="logo"></a>
             </div>
-            <nav class="self-center justify-self-center">
+            <nav class="self-center justify-self-center justify-items-center">
                 <ul class="flex col-4 gap-6">
                     <li>
-                        <a href="#" class="grid gap-3 p-2 w-40">
-                            <img src="includes/images/icons/icon-leaves.png" alt="" />
+                        <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+                            <img src="includes/images/icons/icon-leaves.png" alt="" class="nav-icon"/>
                             <div>My Gardens</div>
                         </a>
                     </li>
                     <li>
-                        <a href="./create-garden.html" class="grid gap-3 p-2 w-40">
-                            <img src="includes/images/icons/icon-leavesNew.png" alt="" />
+                        <a href="./create-garden.html" class="grid gap-3 p-2 w-40 h-12 items-center">
+                            <img src="includes/images/icons/icon-leavesNew.png" alt="" class="nav-icon"/>
                             <div>New Garden</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="grid gap-3 p-2 w-40">
-                            <img src="includes/images/icons/icon-event.png" alt="" />
+                        <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+                            <img src="includes/images/icons/icon-event.png" alt="" class="nav-icon"/>
                             <div>My Events</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="grid gap-3 p-2 w-40">
-                            <img src="includes/images/icons/icon-eventNew.png" alt="" />
+                        <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+                            <img src="includes/images/icons/icon-eventNew.png" alt="" class="nav-icon"/>
                             <div>New Event</div>
                         </a>
                     </li>
                 </ul>
+                <form action="#" method="GET">
+                    <div class="search-bar">
+                        <button id="search-icon" type="submit"></button>
+                        <input type="text" placeholder="Search" class="search" />
+                    </div>
+                </form>
             </nav>
-            <div class="grid grid-cols-2 gap-20">
-                <div class="self-center justify-self-center grid grid-cols-3 gap-4">
+            <div class="edit-icons grid grid-cols-2 gap-20">
+                <!-- <div class="self-center justify-self-center grid grid-cols-3 gap-4">
                     <button>
-                        <img src="includes/images/icons/icon-star.jpeg" alt="" />
+                        <img src="includes/images/icons/icon-star.jpeg" alt="" class="nav-icon"/>
                     </button>
                     <button>
-                        <img src="includes/images/icons/icon-event.png" alt="" />
+                        <img src="includes/images/icons/icon-event.png" alt="" class="nav-icon"/>
                     </button>
                     <button>
-                        <img src="includes/images/icons/icon-edit.jpeg" alt="" />
+                        <img src="includes/images/icons/icon-edit.jpeg" alt="" class="nav-icon"/>
                     </button>
-                </div>
+                </div> -->
                 <div>
                     <button><img src="includes/images/icons/bell.png" alt="" /></button>
                     <button>
@@ -70,12 +76,7 @@
         </header>
         <main class="mt-10">
             <div class="main-wrapper">
-                <form action="#" method="GET">
-                    <div class="search-bar">
-                        <button id="search-icon" type="submit"></button>
-                        <input type="text" placeholder="Search" class="search" />
-                    </div>
-                </form>
+                
                 <section class="category-wrapper">
                     <h1 class="text-2xl font-semibold">Popular Right Now</h1>
                     <div class="gardens-container gap-6">
