@@ -16,53 +16,66 @@
     <title>Giver - CreateGarden</title>
   </head>
   <body class="p-4">
-    <header class="flex justify-between" id="layout1-header">
-      <div>
+    <header class="grid justify-items-center" id="layout1-header">
+      <div class="lg:hidden">
+        <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
+      </div>
+      <div class="logo">
         <a href="index.html" id="logo"></a>
       </div>
-      <nav class="self-center justify-self-center">
+      <nav
+        class="self-center justify-self-center justify-items-center hidden lg:block"
+      >
         <ul class="flex col-4 gap-6">
           <li>
             <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
-              <img src="includes/images/icons/icon-leaves.png" alt="" class="nav-icon"/>
+              <img
+                src="includes/images/icons/icon-leaves.png"
+                alt=""
+                class="nav-icon"
+              />
               <div>My Gardens</div>
             </a>
           </li>
           <li>
-            <a href="./create-garden.html" class="grid gap-3 p-2 w-40 h-12 items-center"
-              ><img src="includes/images/icons/icon-leavesNew.png" alt="" class="nav-icon"/>
-              <div>New Garden</div></a
+            <a
+              href="./create-garden.html"
+              class="grid gap-3 p-2 w-40 h-12 items-center"
             >
+              <img
+                src="includes/images/icons/icon-leavesNew.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>New Garden</div>
+            </a>
           </li>
           <li>
-            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center"
-              ><img src="includes/images/icons/icon-event.png" alt="" class="nav-icon"/>
-              <div>My Events</div></a
-            >
+            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+              <img
+                src="includes/images/icons/icon-event.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>My Events</div>
+            </a>
           </li>
           <li>
-              <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center"
-              ><img src="includes/images/icons/icon-eventNew.png" alt="" class="nav-icon"/>
-              <div>New Event</div></a
-            >
+            <a href="#" class="grid gap-3 p-2 w-40 h-12 items-center">
+              <img
+                src="includes/images/icons/icon-eventNew.png"
+                alt=""
+                class="nav-icon"
+              />
+              <div>New Event</div>
+            </a>
           </li>
         </ul>
       </nav>
-      <div class="grid grid-cols-2 gap-20">
-        <!-- <div class="self-center justify-self-center grid grid-cols-3 gap-4">
-          <button>
-            <img src="includes/images/icons/icon-star.jpeg" alt="" class="nav-icon"/>
-          </button>
-          <button>
-            <img src="includes/images/icons/icon-event.png" alt="" class="nav-icon"/>
-          </button>
-          <button>
-            <img src="includes/images/icons/icon-edit.jpeg" alt="" class="nav-icon"/>
-          </button>
-        </div> -->
-        <div class="justify-self-end">
+      <div class="edit-icons grid place-items-center">
+        <div>
           <button><img src="includes/images/icons/bell.png" alt="" /></button>
-          <button>
+          <button class="hidden lg:inline">
             <img src="includes/images/icons/user-profile.png" alt="" />
           </button>
         </div>
@@ -70,139 +83,114 @@
     </header>
     <main>
       <div class="main-wrapper">
-        <section class="input-container">
-          <div class="input-fields-wrapper">
-            <div class="input-field" id="line-input">
-              <input type="text" placeholder="Add Garden Name" />
+        <form action="#" method="GET">
+          <section class="input-container">
+            <div class="inputs-form">
+              <div class="input-field" id="line-input">
+                <input type="text" placeholder="Add Event Name" />
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Choose a Garden" />
+              </div>
+              <div class="input-field" id="text-input">
+                <textarea
+                  type="text"
+                  placeholder="Add Event Description"
+                ></textarea>
+              </div>
             </div>
-            <div class="input-field">
-              <input type="text" placeholder="Add Address" />
-            </div>
-            <div class="input-field" id="text-input">
-              <textarea
-                type="text"
-                placeholder="Describe your garden to the community"
-              ></textarea>
-            </div>
-          </div>
-          <a href="#">
-            <div class="garden-image-input">
-              <div class="upload-garden-photo">
-                <img
-                  src="./includes/images/icons/add-image-garden-icon.png"
-                  alt=""
-                />
-              </div>
-              <span>Garden Photo</span>
-            </div>
-          </a>
-        </section>
-
-        <section class="category-wrapper gap-4">
-          <h2 class="text-2xl font-semibold mt-3">Grow For The Win</h2>
-          <div class="gardens-container gap-12">
-            <section class="garden-item" id="create-item">
-              <div class="garden-image-edit">
-                <div class="upload-garden-photo">
-                  <img src="./includes/images/items/lemon.png" alt="" />
-                </div>
-                <a href="#"
-                  ><img
-                    src="./includes/images/icons/add-image-invert.png"
-                    alt=""
-                /></a>
-              </div>
-              <span>Lemon Trees</span>
-              <div class="plant-amount-editor">
-                <button class="editor-button">-</button>
-                <div class="plant-amount">
-                  <span>4</span>
-                </div>
-                <button class="editor-button">+</button>
-              </div>
-            </section>
-
-            <section class="garden-item" id="create-item">
-              <div class="garden-image-edit">
-                <div class="upload-garden-photo">
-                  <img src="./includes/images/items/basil.png" alt="" />
-                </div>
-                <a href="#"
-                  ><img
-                    src="./includes/images/icons/add-image-invert.png"
-                    alt=""
-                /></a>
-              </div>
-              <span>Basil</span>
-              <div class="plant-amount-editor">
-                <button class="editor-button">-</button>
-                <div class="plant-amount">
-                  <span>60</span>
-                </div>
-                <button class="editor-button">+</button>
-              </div>
-            </section>
-
-            <section class="garden-item" id="create-item">
+            <div>
               <a href="#">
                 <div class="garden-image-input">
                   <div class="upload-garden-photo">
                     <img
-                      src="./includes/images/icons/add-image-garden-icon.png"
+                      src="includes/images/icons/add-image-garden-icon.png"
                       alt=""
                     />
                   </div>
-                  <span>Plant Photo</span>
+                  <span>Garden Photo</span>
                 </div>
               </a>
-              <span>Add Plant Name</span>
-              <div class="plant-amount-editor">
-                <button class="editor-button">-</button>
-                <div class="plant-amount">
-                  <!-- <span>amount</span> -->
-                  <input type="text" inputmode="numeric" placeholder="0" />
+            </div>
+          </section>
+          <section class="category-wrapper gap-4">
+            <h2 class="text-2xl font-semibold mt-3">Grow For The Win</h2>
+            <div class="gardens-container">
+              <section class="garden-item">
+                <div class="garden-image-edit">
+                  <div class="upload-garden-photo">
+                    <img src="./includes/images/items/lemon.png" alt="" />
+                  </div>
+                  <a href="#"
+                    ><img
+                      src="./includes/images/icons/add-image-invert.png"
+                      alt=""
+                  /></a>
                 </div>
-                <button class="editor-button">+</button>
-              </div>
-            </section>
-          </div>
-          <div class="gardens-container gap-12">
-            <section class="garden-item" id="create-item">
-              <a href="#">
-                <div class="garden-image-input">
+                <span>Lemon Trees</span>
+                <div class="plant-amount-editor">
+                  <button class="editor-button">-</button>
+                  <div class="plant-amount">
+                    <span>4</span>
+                  </div>
+                  <button class="editor-button">+</button>
+                </div>
+              </section>
+
+              <section class="garden-item">
+                <div class="garden-image-edit">
+                  <div class="upload-garden-photo">
+                    <img src="./includes/images/items/basil.png" alt="" />
+                  </div>
+                  <a href="#"
+                    ><img
+                      src="./includes/images/icons/add-image-invert.png"
+                      alt=""
+                  /></a>
+                </div>
+                <span>Basil</span>
+                <div class="plant-amount-editor">
+                  <button class="editor-button">-</button>
+                  <div class="plant-amount">
+                    <span>60</span>
+                  </div>
+                  <button class="editor-button">+</button>
+                </div>
+              </section>
+              <!-- test -->
+              <section class="garden-item">
+                <div class="garden-image-edit">
                   <div class="upload-garden-photo">
                     <img
-                      src="./includes/images/icons/add-image-garden-icon.png"
+                      src="./includes/images/icons/add-photo-garden.png"
                       alt=""
                     />
                   </div>
-                  <span>Plant Photo</span>
                 </div>
-              </a>
-              <span>Add Plant Name</span>
-              <div class="plant-amount-editor">
-                <button class="editor-button">-</button>
-                <div class="plant-amount">
-                  <!-- <span>amount</span> -->
-                  <input type="text" inputmode="numeric" placeholder="0" />
-                </div>
-                <button class="editor-button">+</button>
-              </div>
-            </section>
-
-            <section class="garden-item" id="add-plant-item">
-              <a href="#">
-                <div class="garden-image-input">
-                  <div class="upload-garden-photo">
-                    <img src="./includes/images/icons/add-plant-icon.png" alt="" />
+                <span>Add Plant Name</span>
+                <div class="plant-amount-editor">
+                  <button class="editor-button">-</button>
+                  <div class="plant-amount">
+                    <span>60</span>
                   </div>
-                  <span>Add New Plant</span>
+                  <button class="editor-button">+</button>
                 </div>
-              </a>
-            </section>
-          </div>
+              </section>
+
+              <section class="garden-item">
+                <div class="garden-image-edit">
+                  <div class="upload-garden-photo">
+                    <img
+                      src="./includes/images/icons/add-plant-item.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
           <button class="submit-button">Submit</button>
-        </section>
+        </form>
       </div>
     </main>
   </body>
