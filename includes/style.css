@@ -64,9 +64,10 @@ li a:hover {
 
 .search-bar {
   display: flex;
-  width: 704px;
+  width: 712px;
   height: 48px;
   margin: 0 auto;
+  margin-top: 16px;
   padding: 12px;
   align-items: center;
 
