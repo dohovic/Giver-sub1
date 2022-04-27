@@ -4,6 +4,10 @@
   text-decoration: none;
 }
 
+@viewport {
+  width: 480px;
+  zoom: 1;
+}
 header,
 main,
 footer,
@@ -64,13 +68,12 @@ li a:hover {
 
 .search-bar {
   display: flex;
-  width: 712px;
+  max-width: 712px;
+  min-width: 300px;
   height: 48px;
   margin: 0 auto;
-  margin-top: 16px;
   padding: 12px;
   align-items: center;
-
   background: #f3f0f0;
   border-radius: 15px;
 }
@@ -101,16 +104,13 @@ input::placeholder {
   width: 90%;
   border-bottom: 1px black solid;
 }
-.category-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 32px;
-}
+
 
 .gardens-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  gap: 20px;
 }
 
 .gardens-container:last-child {
@@ -124,8 +124,10 @@ input::placeholder {
 .garden-item {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 264px;
+  max-width: 300px;
+  max-height: 264px;
+  min-width: 300px;
+  min-height: 176px;
   justify-content: space-between;
   font-style: normal;
   font-weight: 600;
@@ -210,7 +212,8 @@ input::placeholder {
 
 .input-field {
   display: flex;
-  width: 898px;
+  max-width: 898px;
+  min-width: 300px;
   height: 48px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -221,12 +224,16 @@ input::placeholder {
   font-weight: 600;
   font-size: 16px;
   padding-top: 10px;
+  overflow-y: auto;
 }
-
+.edit-icons{
+  vertical-align: middle;
+}
 .time-inputs {
   display: flex;
-  height: 48px;
-  gap: 33px;
+  max-width: 898px;
+  min-height: 48px;
+  gap: 19px;
 }
 
 .time-input {
@@ -234,6 +241,7 @@ input::placeholder {
   padding: 12px;
   justify-content: space-between;
   width: 100%;
+  min-width: 300px;
   background: #f3f0f0;
   border-radius: 15px;
   align-items: center;
@@ -317,12 +325,17 @@ input::placeholder {
 }
 
 .input-container {
+  gap:24px;
   display: flex;
   flex-wrap: wrap;
   margin: 0px auto;
-  justify-content: space-between;
   align-items: center;
   /* padding-left: 50px; */
+}
+
+.inputs-form{
+  min-width: 300px;
+  width: 60%;
 }
 .second-comtainer {
   padding-top: 20px;
@@ -343,8 +356,8 @@ input::placeholder {
 
 .garden-image-edit {
   display: grid;
-  width: 424px;
-  height: 272px;
+  max-width: 424px;
+  max-height: 272px;
   align-content: center;
   justify-content: center;
 
@@ -368,29 +381,6 @@ input::placeholder {
   margin: 4px;
 }
 
-#create-item {
-  display: flex;
-  flex-direction: column;
-  width: 424px;
-  height: 390px;
-  /* margin-right: 32px; */
-  /* margin-bottom: 32px; */
-  align-items: center;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-#plant-item {
-  width: 424px;
-  height: 336px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-}
 
 #item-display {
   border-bottom-left-radius: 0px;
@@ -399,8 +389,9 @@ input::placeholder {
 
 .amount-display {
   display: flex;
-  width: 424px;
-  height: 64px;
+  max-width: 424px;
+  max-height: 64px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
 
@@ -416,8 +407,8 @@ input::placeholder {
 .plant-amount-editor {
   display: flex;
   justify-content: center;
-  width: 424px;
-  height: 64px;
+  max-width: 424px;
+  max-height: 64px;
 
   border-radius: 15px;
   background: #d8d8d8;
@@ -426,7 +417,7 @@ input::placeholder {
 .plant-amount {
   display: flex;
   width: 286px;
-  height: 64px;
+  max-height: 64px;
   justify-content: center;
   align-items: center;
 
@@ -449,7 +440,8 @@ input::placeholder {
 
 .editor-button {
   width: 69px;
-  height: 64px;
+  max-height: 64px;
+  min-height: 30px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -470,9 +462,11 @@ input::placeholder {
 }
 
 .social-container {
+  gap: 30px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-self: center;
+  justify-content: space-between;
 }
 
 .comments-wrapper {
@@ -485,7 +479,7 @@ input::placeholder {
 .comment-container {
   display: flex;
   flex-direction: row;
-  width: 848px;
+  max-width: 848px;
   height: 200px;
   padding: 20px;
 
@@ -524,8 +518,11 @@ input::placeholder {
   margin-left: 0;
 }
 
-#social-comments {
+.social-comments {
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .social-profile {
@@ -550,16 +547,13 @@ input::placeholder {
   font-size: 12px;
 }
 
-#social-stories {
+.story-container{
+  max-width: 424px;
+  gap:24px;
   display: flex;
-  align-content: baseline;
-  justify-content: flex-start;
-  margin: 0;
-  width: 424px;
-}
-
-#social-stories > a {
-  /* position: absolute; */
+  flex-wrap: wrap;
+  margin: 0px auto;
+  align-items: center;
 }
 
 .story-desktop {
@@ -578,12 +572,42 @@ input::placeholder {
 }
 
 .story-pic-container {
-  width: 104px;
+  max-width: 104px;
   height: 200px;
   position: relative;
   z-index: 2;
 }
 
-.story-pic {
-  width: 100%;
+
+
+
+@media only screen and (max-width: 1000px) {
+  nav{
+    display: hidden;
+  }
+}
+@media only screen and (max-width: 1152px) {
+  .time-inputs {
+    flex-wrap: wrap;
+  }
+
+  .input-container{
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .second-comtainer {
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  .garden-image-input{
+    width: 300px;
+  }
+
+  .story-container{
+    gap:5px;
+  }
+  .gardens-container{
+    justify-content: space-around;
+  }
 }
