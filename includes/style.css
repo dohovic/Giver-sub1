@@ -29,13 +29,7 @@ body {
   display: block;
   width: 138px;
   height: 48px;
-  /* margin-top: 28px;
-  margin-left: 24px; */
 }
-
-/* header, nav, footer {
-    width: 100%;
-} */
 
 .nav-icon {
   height: 22px;
@@ -51,6 +45,7 @@ li a {
   border-radius: 15px;
   grid-template-columns: auto 1fr;
 }
+
 li a:hover {
   background: #dad6d6;
 }
@@ -86,7 +81,6 @@ input::placeholder {
   font-weight: 600;
   font-size: 16px;
   color: #000000;
-
   outline: none;
   background-color: transparent;
 }
@@ -100,11 +94,11 @@ input::placeholder {
   height: 24px;
   padding-left: 16px;
 }
+
 .search {
   width: 90%;
   border-bottom: 1px black solid;
 }
-
 
 .gardens-container {
   display: flex;
@@ -126,9 +120,8 @@ input::placeholder {
   flex-direction: column;
   max-width: 300px;
   max-height: 264px;
-  min-width: 300px;
-  min-height: 176px;
-  justify-content: space-between;
+  min-width: 150px;
+  min-height: 140px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -146,7 +139,6 @@ input::placeholder {
   margin-right: 32px;
   margin-left: 64px;
   justify-content: space-between;
-
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -158,6 +150,7 @@ input::placeholder {
   overflow: hidden;
   scroll-behavior: smooth;
 }
+
 .wrapper section {
   width: 100%;
   position: relative;
@@ -165,27 +158,32 @@ input::placeholder {
   grid-template-columns: repeat(5, auto);
   margin: 20px 0;
 }
+
 .wrapper section .item {
   position: relative;
   padding: 0 2px;
   transition: 250ms all;
 }
+
 .wrapper section .item:hover {
   margin: 0 40px;
   transform: scale(1.2);
 }
+
 .wrapper section .item .heading {
   position: absolute;
   bottom: 20px;
   left: 20px;
   color: black;
 }
+
 .wrapper section .item .duration {
   position: absolute;
   bottom: 0;
   left: 20px;
   color: black;
 }
+
 .wrapper section .arrow__btn {
   position: absolute;
   color: #fff;
@@ -197,12 +195,14 @@ input::placeholder {
   text-align: center;
   z-index: 1;
 }
+
 .wrapper section .left-arrow {
   top: 0;
   bottom: 0;
   left: 0;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
+
 .wrapper section .right-arrow {
   top: 0;
   bottom: 0;
@@ -226,9 +226,11 @@ input::placeholder {
   padding-top: 10px;
   overflow-y: auto;
 }
-.edit-icons{
+
+.edit-icons {
   vertical-align: middle;
 }
+
 .time-inputs {
   display: flex;
   max-width: 898px;
@@ -253,6 +255,7 @@ input::placeholder {
 .date {
   padding: 5px;
   border-radius: 10px;
+  min-width: 150px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -287,13 +290,13 @@ input::placeholder {
   outline: none;
   width: 100%;
   height: 100%;
-
   background-color: transparent;
 }
 
 #text-input {
   height: 144px;
 }
+
 #text-input > textarea::placeholder {
   font-weight: 600;
   color: #000000;
@@ -303,7 +306,6 @@ input::placeholder {
   width: 100%;
   height: 100%;
   resize: none;
-
   outline: none;
   background-color: transparent;
 }
@@ -315,9 +317,9 @@ input::placeholder {
   font-weight: 600;
   font-size: 24px;
   color: #000000;
-
   background-color: transparent;
 }
+
 #line-input > input {
   outline: none;
   width: 100%;
@@ -325,18 +327,18 @@ input::placeholder {
 }
 
 .input-container {
-  gap:24px;
+  gap: 24px;
   display: flex;
   flex-wrap: wrap;
   margin: 0px auto;
   align-items: center;
-  /* padding-left: 50px; */
 }
 
-.inputs-form{
+.inputs-form {
   min-width: 300px;
   width: 60%;
 }
+
 .second-comtainer {
   padding-top: 20px;
   padding-left: 50px;
@@ -375,12 +377,10 @@ input::placeholder {
 
 .garden-image-input .upload-garden-photo {
   width: 106px;
-  /* height: 104px; */
   align-self: center;
   justify-self: center;
   margin: 4px;
 }
-
 
 #item-display {
   border-bottom-left-radius: 0px;
@@ -394,7 +394,6 @@ input::placeholder {
   min-height: 40px;
   justify-content: center;
   align-items: center;
-
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #f3f0f0;
@@ -409,7 +408,6 @@ input::placeholder {
   justify-content: center;
   max-width: 424px;
   max-height: 64px;
-
   border-radius: 15px;
   background: #d8d8d8;
 }
@@ -420,7 +418,6 @@ input::placeholder {
   max-height: 64px;
   justify-content: center;
   align-items: center;
-
   background: #f3f0f0;
 }
 
@@ -428,7 +425,6 @@ input::placeholder {
   width: auto;
   outline: none;
   text-align: center;
-
   background-color: transparent;
 }
 
@@ -452,14 +448,14 @@ input::placeholder {
   width: 144px;
   height: 48px;
   margin-top: 16px;
-
   border-radius: 15px;
   background: #f3f0f0;
 }
 
-#garden-name{
+#garden-name {
   font-weight: 700;
 }
+
 .garden-detail {
   font-weight: 400;
 }
@@ -485,12 +481,9 @@ input::placeholder {
   max-width: 848px;
   height: 200px;
   padding: 20px;
-
   border: 0px solid;
   border-radius: 0px;
-  /* border-bottom: 1px solid; */
   border-top: 1px solid;
-  /*background: transparent;*/
   background: #f3f0f0;
 }
 
@@ -501,7 +494,6 @@ input::placeholder {
 
 #story-profile {
   width: 32px;
-
   border: 2px solid;
   border-radius: 50%;
   border-color: #c4c4c4;
@@ -550,27 +542,22 @@ input::placeholder {
   font-size: 12px;
 }
 
-.story-container{
+.story-container {
   max-width: 424px;
-  gap:24px;
+  gap: 24px;
   display: flex;
   flex-wrap: wrap;
   margin: 0px auto;
   align-items: center;
+  justify-content: space-between;
 }
 
 .story-desktop {
   display: flex;
-  /* width: 104px; */
   height: 200px;
-  /* padding: 6px; */
   align-items: end;
   justify-content: center;
-  /* background: url("./images/stories/lihi-story.png"); */
-  /* background-size: 100% auto; */
-  /* background: #F3F0F0; */
   border-radius: 5px;
-  margin-right: 16px;
   margin-bottom: 8px;
 }
 
@@ -582,14 +569,14 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 1024px) {
-  nav{
+  nav {
     position: fixed;
     display: none;
     background: #000000;
     top: 60px;
   }
 
-  nav .active{
+  nav .active {
     display: block;
   }
 }
@@ -598,7 +585,16 @@ input::placeholder {
     flex-wrap: wrap;
   }
 
-  .input-container{
+  #comment-profile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social-profile > span {
+    font-size: 10px;
+  }
+
+  .input-container {
     justify-content: space-around;
   }
 }
@@ -607,15 +603,24 @@ input::placeholder {
     padding-top: 20px;
     padding-left: 0px;
   }
-  .garden-image-input{
+
+  .garden-image-input {
     width: 300px;
   }
 
-  .story-container{
-    gap:5px;
-  }
-  .gardens-container{
-    justify-content: space-around;
+  .garden-image {
+    width: 150px;
   }
 
+  .garden-item {
+    width: 150px;
+  }
+
+  .story-container {
+    gap: 5px;
+  }
+
+  .gardens-container {
+    justify-content: space-around;
+  }
 }
