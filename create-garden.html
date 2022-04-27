@@ -8,7 +8,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="includes/style.css" />
-    <link rel="icon" href="favicon.ico?v=2" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand"
@@ -22,16 +21,17 @@
   </head>
   <body class="p-4">
     <header class="grid justify-items-center" id="layout1-header">
-      <div class="lg:hidden">
+      <button class="lg:hidden" onclick="toggleMenu()">
         <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
-      </div>
+      </button>
       <div class="logo">
         <a href="index.html" id="logo"></a>
       </div>
       <nav
-        class="self-center justify-self-center justify-items-center hidden lg:block"
+        id="navigation"
+        class="lg:self-center lg:justify-self-center lg:justify-items-center justify-self-start"
       >
-        <ul class="flex col-4 gap-6">
+        <ul class="grid gap-2 p-10 lg:flex lg:gap-6 lg:p-0">
           <li>
             <a
               href="garden-item.html"
@@ -141,7 +141,7 @@
                       alt=""
                   /></a>
                 </div>
-                <span>Lemon Trees</span>
+                <span class="text-center">Lemon Trees</span>
                 <div class="plant-amount-editor">
                   <button class="editor-button">-</button>
                   <div class="plant-amount">
@@ -162,7 +162,7 @@
                       alt=""
                   /></a>
                 </div>
-                <span>Basil</span>
+                <span class="text-center">Basil</span>
                 <div class="plant-amount-editor">
                   <button class="editor-button">-</button>
                   <div class="plant-amount">
@@ -171,7 +171,6 @@
                   <button class="editor-button">+</button>
                 </div>
               </section>
-              <!-- test -->
               <section class="garden-item">
                 <div class="garden-image-edit">
                   <div class="upload-garden-photo">
@@ -181,7 +180,7 @@
                     />
                   </div>
                 </div>
-                <span>Add Plant Name</span>
+                <span class="text-center">Add Plant Name</span>
                 <div class="plant-amount-editor">
                   <button class="editor-button">-</button>
                   <div class="plant-amount">
@@ -190,7 +189,6 @@
                   <button class="editor-button">+</button>
                 </div>
               </section>
-
               <section class="garden-item">
                 <div class="garden-image-edit">
                   <div class="upload-garden-photo">
@@ -203,7 +201,12 @@
               </section>
             </div>
           </section>
-          <button class="submit-button">Submit</button>
+          <button
+            class="submit-button"
+            onclick="location.href = './garden-item.html';"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </main>
