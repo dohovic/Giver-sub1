@@ -13,22 +13,31 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <script src="includes/script.js"></script>
     <title>Giver - Home Page</title>
   </head>
   <body class="p-4">
     <header class="grid justify-items-center" id="layout1-header">
-      <div class="lg:hidden">
+      <button class="lg:hidden" onclick="toggleMenu()">
         <img src="includes/images/icons/icon-mobile-menu.png" alt="" />
-      </div>
+      </button>
       <div class="logo">
         <a href="index.html" id="logo"></a>
       </div>
       <nav
-        class="self-center justify-self-center justify-items-center hidden lg:block"
+        id="navigation"
+        class="lg:self-center lg:justify-self-center lg:justify-items-center justify-self-start"
       >
-        <ul class="flex col-4 gap-6">
+        <ul class="grid gap-2 p-10 lg:flex lg:gap-6 lg:p-0">
           <li>
-            <a href="garden-item.html" class="grid gap-3 p-2 w-40 h-12 items-center">
+            <a
+              href="garden-item.html"
+              class="grid gap-3 p-2 w-40 h-12 items-center"
+            >
               <img
                 src="includes/images/icons/icon-leaves.png"
                 alt=""
@@ -61,7 +70,10 @@
             </a>
           </li>
           <li>
-            <a href="create-event.html" class="grid gap-3 p-2 w-40 h-12 items-center">
+            <a
+              href="create-event.html"
+              class="grid gap-3 p-2 w-40 h-12 items-center"
+            >
               <img
                 src="includes/images/icons/icon-eventNew.png"
                 alt=""

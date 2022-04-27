@@ -19,3 +19,7 @@ function addTask(e) {
   div.appendChild(input);
   container.appendChild(div);
 }
+
+function toggleMenu(){
+  $("#navigation").toggleClass("block");
+}
